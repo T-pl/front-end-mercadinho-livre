@@ -1,0 +1,270 @@
+*{
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+
+}
+body {
+  margin: 0;
+  font: 1em "Open Sans",Arial;
+  color: #333;
+  background: #ccc;
+}
+
+header {
+  background-color: yellow;
+  width: 100%;
+  display: inline-block;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+ nav {
+  float: right;
+  padding-top: 15px;
+}
+
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+header nav ul li a {
+  color: blue;
+}
+
+header nav ul li a:hover {
+  color: #2A2C71;
+}
+
+header .menu {
+  border: 1px solid #2A2C71;
+  color: #2A2C71;
+  padding: 10px 15px;
+  float: right;
+  margin: 10px;
+  display: none;
+}
+
+body{
+  background: #ccc;
+}
+
+nav input, nav button{
+  padding: 8px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+nav input{
+  border-radius: 5px 0 0 5px;
+}
+nav button{
+  border-radius: 0 5px 5px 0;
+  background: #333;
+  color: #fff;
+}
+#pesquisar{
+  display: flex;
+  margin-left: 10px;
+}
+.banner img{
+  width: 100%;
+}
+main{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+main h1{
+  text-align: center;
+  margin: 25px;
+}
+
+ .grid-produtos{
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  margin: 50px 0;
+
+}
+.grid-produtos img{
+ width: 90%;
+}
+
+.grid-produtos .coluna{
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0  10px #333;
+  text-decoration: none;
+  color: #333;
+  transition: all 1s;
+  margin: 5px;
+}
+
+.grid-produtos p{
+  margin: 15px;
+}
+
+.grid-produtos .coluna .valor{
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #f00;
+}
+.grid-produtos .coluna:hover{
+  transform: scale(1.05);
+}
+
+footer{
+  background: #fff;
+  padding: 15px 0;
+}
+
+footer p{
+  text-align: center;
+  margin: 10px;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+
+}
+.grid .coluna{
+  text-align: center;
+  margin: 0 10px;
+}
+
+main .grid{
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0  10px #333;
+  padding: 20px;
+  margin: 50px 0;
+}
+
+main .grid .coluna img{
+  width: 90%;
+  transition: all 1s;
+}
+main .grid .coluna img:hover{
+  width: 90%;
+  transform: scale(1.05);
+}
+
+main .grid .coluna{
+  text-align: justify;
+  padding: 5px;
+}
+
+p{
+  margin-bottom: 15px;
+}
+
+main .grid .coluna .valor{
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #f00;
+}
+main .grid .coluna i{
+  margin-right: 5px;
+}
+.botao{
+  background: blue;
+  color: #fff;
+  padding: 15px;
+  border: 1px solid #666 !important;
+  border-radius: 5px;
+  margin-top: 15px;
+  width: 100%;
+  /* display: inline-block; */
+  text-align: center;
+  transition: all 0.5s;
+  font-size: 1.05em;
+  cursor:  pointer !important;
+}
+.botao:hover{
+  background: rgb(174, 0, 255);
+}
+
+#form-contato{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#form-contato .campo{
+  border: 1px solid #666;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 90% !important;
+  box-sizing: content-box;
+}
+
+ 
+
+.tabela{
+  width: 100%;
+  /* border-collapse: collapse; */
+  margin: 15px 0;
+}
+.tabela thead, .tabela tfoot{
+  background: #333;
+  padding: 10px;
+  color: #fff;
+}
+
+.tabela td{
+  padding: 10px;
+  text-align: center;
+}
+.tabela tbody tr:nth-child(odd){
+  background: #fff;
+}
+
+.total{
+  text-align: left !important;
+}
+
+
+textarea::placeholder{
+  font: 1em "Open Sans",Arial;
+
+}
+
+.botao-contato{
+  margin-bottom: 25px;
+  width: 95% !important;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 480px) {
+  .mostrar .menu {
+    display: block;
+  }
+  nav, nav ul li{
+    width: 100%;
+  }
+  header nav{
+    width: 100%;
+    display: none;
+  }
+  header nav ul, header nav ul li{
+    padding: 0;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+  .show, header .menu{
+    display: block;
+  }
+  main{
+    width: 100%;
+  }
+  .grid, .grid-produtos{
+    grid-template-columns: 100%;
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercado Livrinho</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="shortcut icon" href="./images/icone.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <a href="#"><img src="./images/logo.png" alt="Logo Oficial"></a>
+    <a href="javascript:menu()" class="menu" title="Menu">
+      <i class="fa-solid fa-bars"></i>
+  </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a title="Carrinho" href="contato.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
+        <li>
+          <form id="pesquisar" name="Busca" action="#" method="get">
+            <input type="text" name="busca" placeholder="Pesquisar Produto">
+            <button title="Botão de Busca" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="banner">
+    <img src="./images/banner1.jpg" alt="Banner" >
+  </div>
+  <main>
+    <h1>Produtos em Destaque</h1>
+    <div class="grid-produtos">
+      <a rel = "noreferrer" href="secaocomprar.html" title="Notebook Dell" class="coluna">
+        <img src="./images/note1936036609_1GG.jpg" alt="Notebook Dell">
+        <p class="valor">R$ 6990,90</p>
+        <p>Notebook Dell, Core i7, 16GB, 480 SSD</p>
+      </a>
+      <a href="secaocomprar.html" title="Notebook Dell" class="coluna">
+        <img src="./images/tv3068549711_1GG.jpg" alt="Notebook Dell">
+        <p class="valor">R$ 12000,00</p>
+        <p>TV Samsung </p>
+      </a>
+      <a rel = "noreferrer" href="secaocomprar.html" title="Notebook Dell" class="coluna">
+        <img src="./images/celular2969521441_1GG.jpg" alt="Notebook Dell">
+        <p class="valor">R$ 6990,90</p>
+        <p >Iphone 14</p>
+      </a>
+      <a rel = "noreferrer" href="secaocomprar.html" title="Notebook Dell" class="coluna">
+        <img src="./images/note1936036609_1GG.jpg" alt="Notebook Dell">
+        <p class="valor">R$ 6990,90</p>
+        <p>Notebook Dell, Core i5, 8GB, 250SSD</p>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="grid">
+      <div class="coluna">
+        <i class="fa-solid fa-credit-card fa-5x"></i>
+        <p>Pague com o Cartão de Crédito</p>
+      </div>
+      <div class="coluna">
+        <i class="fa-solid fa-gifts fa-5x"></i>
+        <p>Parcele em até 6x sem juros</p>
+      </div>
+      <div class="coluna">
+        <i class="fa-solid fa-truck fa-5x"></i>
+        <p>Frete grátis para compras acima de R$ 500,00</p>
+      </div>
+    </div>
+    <hr>
+    <p>Desenvolvido por <a rel = "noreferrer noopener" rel = "noreferrer" title="Link Github" target="_blank" href="https://github.com/T-pl">Tiago Ferreira</a> <span> 2022</span></p>
+
+  </footer>
+
+  <script src="./scripts/script.js"></script>
+</body>
+</html>

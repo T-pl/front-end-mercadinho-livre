@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercado Livrinho</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="shortcut icon" href="./images/icone.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <a href="#"><img src="./images/logo.png" alt="Logo Oficial"></a>
+    <a href="javascript:menu()" class="menu" title="Menu">
+      <i class="fa-solid fa-bars"></i>
+  </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a rel = "noreferrer noopener" rel = "noreferrer" title="Contato" target="_blank" href="contato.html">Contato</a></li>
+        <li><a title="Carrinho" href="contato.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
+        <li>
+          <form id="pesquisar" name="Busca" action="#" method="get">
+            <input type="text" name="busca" placeholder="Pesquisar Produto">
+            <button title="Botão de Busca" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="banner">
+    <img src="./images/banner1.jpg" alt="Banner" >
+  </div>
+  <main>
+   <h1>Carrinho de Compras</h1>
+   <table class="tabela">
+      <thead>
+        <tr>
+          <td>Produto</td>
+          <td>Quantidade</td>
+          <td>Valor</td>
+          <td>Total</td>
+          <td>Excluir</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Apple iPhone 13</td>
+          <td>1</td>
+          <td>R$ 12000,50</td>
+          <td>R$ 15550,00</td>
+          <td><a href="#" title="Excluir"><i class="fa-solid fa-trash-alt"></i></a></td>
+        </tr>
+        <tr>
+          <td>Apple iPhone 13</td>
+          <td>1</td>
+          <td>R$ 12000,50</td>
+          <td>R$ 15550,00</td>
+          <td><a href="#" title="Excluir"><i class="fa-solid fa-trash-alt"></i></a></td>
+        </tr>
+        <tr>
+          <td>Apple iPhone 13</td>
+          <td>1</td>
+          <td>R$ 12000,50</td>
+          <td>R$ 15550,00</td>
+          <td><a href="#" title="Excluir"><i class="fa-solid fa-trash-alt"></i></a></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3" class="total" >TOTAL</td>
+          <td colspan="2">R$ 46650,0</td>
+        </tr>
+      </tfoot>
+     
+   </table>
+  </main>
+
+  <footer>
+    <div class="grid">
+      <div class="coluna">
+        <i class="fa-solid fa-credit-card fa-5x"></i>
+        <p>Pague com o Cartão de Crédito</p>
+      </div>
+      <div class="coluna">
+        <i class="fa-solid fa-gifts fa-5x"></i>
+        <p>Parcele em até 6x sem juros</p>
+      </div>
+      <div class="coluna">
+        <i class="fa-solid fa-truck fa-5x"></i>
+        <p>Frete grátis para compras acima de R$ 500,00</p>
+      </div>
+    </div>
+    <hr>
+    <p>Desenvolvido por <a rel = "noreferrer noopener" rel = "noreferrer" title="Link Github" target="_blank" href="https://github.com/T-pl">Tiago Ferreira</a> <span> 2022</span></p>
+
+  </footer>
+
+  <script src="./scripts/script.js"></script>
+</body>
+</html>

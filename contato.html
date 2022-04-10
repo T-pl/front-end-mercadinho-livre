@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="shortcut icon" href="./images/icone.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <a href="#"><img src="./images/logo.png" alt="Logo Oficial"></a>
+    <a href="javascript:menu()" class="menu" title="Menu">
+      <i class="fa-solid fa-bars"></i>
+  </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a title="Carrinho" href="carrinho.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
+        <li>
+          <form id="pesquisar" name="Busca" action="#" method="get">
+            <input type="text" name="busca" placeholder="Pesquisar Produto">
+            <button title="Botão de Busca" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="banner">
+    <img src="./images/banner1.jpg" alt="Banner" >
+  </div>
+  <main>
+    <h1>Entrar em Contato</h1>
+    <form id="form-contato" action="contato.html" method="post" name="Contato">
+      <label for="nome">Nome:</label>
+      <input class="campo" type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+      <label  for="email">Email:</label>
+      <input class="campo" type="email" name="email" id="email" placeholder="Digite seu email" required>
+      <label for="assunto">Selecione um assunto:</label>
+      <select class="campo style-select" name="assunto" id="assunto" required>
+        <option value=""></option>
+        <option value="R">Reclamação</option>
+        <option value="S">Sugestão</option>
+        <option value="E">Elogio</option>
+      </select>
+      <label for="mensagem">Mensagem:</label>
+      <textarea class="campo" name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+      <input class="botao botao-contato"  type="submit" value="Enviar Mensagem">
+    </form>
+  </main>
+
+  <footer>
+    <div class="grid">
+      <div class="coluna">
+        <i class="fa-solid fa-credit-card fa-5x"></i>
+        <p>Pague com o Cartão de Crédito</p>
+      </div>
+      <div class="coluna">
+        <i class="fa-solid fa-gifts fa-5x"></i>
+        <p>Parcele em até 6x sem juros</p>
+      </div>
+      <div class="coluna">
+        <i class="fa-solid fa-truck fa-5x"></i>
+        <p>Frete grátis para compras acima de R$ 500,00</p>
+      </div>
+    </div>
+    <hr>
+    <p>Desenvolvido por <a rel = "noreferrer noopener" rel = "noreferrer" title="Link Github" target="_blank" href="https://github.com/T-pl">Tiago Ferreira</a> <span> 2022</span></p>
+
+  </footer>
+
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
