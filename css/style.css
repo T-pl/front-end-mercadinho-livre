@@ -2,6 +2,7 @@
   text-decoration: none;
   padding: 0;
   margin: 0;
+  list-style: none;
 
 }
 body {
@@ -178,11 +179,11 @@ main .grid .coluna i{
   border-radius: 5px;
   margin-top: 15px;
   width: 100%;
-  /* display: inline-block; */
+  display: inline-block;
   text-align: center;
   transition: all 0.5s;
   font-size: 1.05em;
-  cursor:  pointer !important;
+  cursor: pointer !important;
 }
 .botao:hover{
   background: rgb(174, 0, 255);
@@ -238,6 +239,25 @@ textarea::placeholder{
 .botao-contato{
   margin-bottom: 25px;
   width: 95% !important;
+  
+}
+.secao-contato{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.lista-redes{
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  
+}
+
+.lista-redes li a i{
+  color: #333;
 }
 
 /* RESPONSIVIDADE */
